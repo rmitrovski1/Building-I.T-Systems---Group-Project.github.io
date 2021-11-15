@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+    <!-- STYLES SHEET -->
+    <link rel = "stylesheet" href = "style.css">
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <title>Cupcakes!</title>
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <header>
+      <nav>
+        <img src = "images/nav-logo.png" class = "logo_image">
+        <ul class = "navbar">
+          <img src = "images/nav-logo.png" class = "nav_image">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cakes.html">Cakes</a></li>
+          <li><a class = "active_nav" href="cupcakes.html">Cupcakes</a></li>
+          <li><a href="treats.html">Sweet Treats</a></li>
+          <li><a href="gallery_reviews.html">Gallery and Reviews</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="join_us.html">Join Us</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class = "hamburger">
+          <div class = "line1"></div>
+          <div class = "line2"></div>
+          <div class = "line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div class = "banner">
+      <img class = "banner" src = "images/cupcakes_banner.jpg" alt = "">
+      <div class = "banner_overlay">
+        <h2>Cupcake Heaven</h2>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="cupcakerow">
+      <div class="cupcakecolumn2">
+          <img class="cupcakeimages2" src="images/cupcakes/chocolate.jpg">
+      </div>
+      <div class="cupcakecolumn2">
+        <div class="cupcakepadding">
+          <h2 class="cupcakes2">Chocolate Cupcake</h1>
+          <p class="cupcakes3">$10</p>
+          <p class="cupcakes4">Made from simple everyday ingredients, these chocolate cupcakes will be your new favourite.</p>
+          <p class="cupcakes5">Ingredients:</p>
+          <ul class="cupcakes">
+            <li class="cupcakes">Unsweetened natural cocoa powder</li>
+            <li class="cupcakes">Vanilla extract</li>
+            <li class="cupcakes">Baking soda</li>
+            <li class="cupcakes">Baking powder</li>
+            <li class="cupcakes">Eggs</li>
+            <li class="cupcakes">Salt</li>
+            <li class="cupcakes">Granulated sugar</li>
+            <li class="cupcakes">Plain Flour</li>
+            <li class="cupcakes">Brown sugar</li>
+            <li class="cupcakes">Buttermilk</li>
+            <li class="cupcakes">Oil</li>
+          </ul>
+          <div class="input-group">
+            <label class="cupcakes" for="quantity">Qty</label>
+            <input type="button" value="-" class="button-minus" data-field="quantity">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <input type="button" value="+" class="button-plus" data-field="quantity">
+            <a href="#" class="buttoncupcakes">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class = "footer_container">
+        <div class = "footer">
+          <div class = "footer_heading footer_sitemap">
+            <h2>The Sweet Corner</h2>
+            <a href="index.html">Home</a>
+            <a href="cakes.html">Cakes</a>
+            <a href="cupcakes.html">Cupcakes</a>
+            <a href="treats.html">Sweet Treats</a>
+            <a href="gallery_reviews.html">Gallery and Reviews</a>
+            <a href="locations.html">Locations</a>
+            <a href="join_us.html">Join Us</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+          </div>
+          <div class = "footer_heading footer_socials">
+            <h2>Social Media</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">TikTok</a>
+          </div>
+          <div class = "footer_newsletter">
+            <h2>Join us on the <br>sweetest journey ever!<br>Subscribe Now!</h2>
+            <input type = "email" placeholder = "example@email.com" id = "footer_newsletter">
+            <input type = "submit" value = "Subscribe" id = "footer_newsletter_button">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src = "products_script.js"></script>
+    <script src = "script.js"></script>
+
+  </body>
+
+</html>

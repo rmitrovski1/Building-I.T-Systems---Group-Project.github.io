@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+    <!-- STYLES SHEET -->
+    <link rel = "stylesheet" href = "style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Contact Us!</title>
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <header>
+      <nav>
+        <img src = "images/nav-logo.png" class = "logo_image">
+        <ul class = "navbar">
+          <img src = "images/nav-logo.png" class = "nav_image">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cakes.html">Cakes</a></li>
+          <li><a href="cupcakes.html">Cupcakes</a></li>
+          <li><a href="treats.html">Sweet Treats</a></li>
+          <li><a href="gallery_reviews.html">Gallery and Reviews</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="join_us.html">Join Us</a></li>
+          <li><a class = "active_nav" href="contact_us.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class = "hamburger">
+          <div class = "line1"></div>
+          <div class = "line2"></div>
+          <div class = "line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div class = "banner">
+      <img class = "banner" src = "images/contact_us_banner.jpg" alt = "">
+      <div class = "banner_overlay">
+        <h2>Need Help? Ask Away!</h2>
+      </div>
+      <div class = "scroll_down">
+        <a = href = "#contact_us_content">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class = "contact_us_content" id = "contact_us_content">
+      <h2>Have any queries for <i>THE SWEET CORNER</i>?</h2>
+      <p>
+        <b>Ask Away!</b>
+      </p>
+        <br>
+      <p>
+        Fill in the form below and choose if you prefer to be contacted via phone or email! Our superb team here at The Sweet Corner will be in touch with you
+        <br>within 2 business days of your enquiry! Any questions regarding our products, stores, customisation, catering/functions and more will be answered
+        <br>by the finest staff!
+      </p>
+    </div>
+
+    <!-- Contact Us Form -->
+    <input type = "checkbox" id = "show" action = "s3901069@student.rmit.edu.au">
+    <label for = "show" class = "show_join_form">Enquiry Form</label>
+    <div class = "join_form">
+      <label for = "show" class = "close_join_form fas fa-times"></label>
+      <div class = "join_form_title">Please Fill in the Below Details</div>
+      <form name = "myForm" onsubmit = "return checkForm()" method = "post">
+        <div class = "join_form_info">
+          <span class = "label">First Name</span>
+          <input name="fname" type="text" value="" id="fname" required/>
+        </div>
+        <div class="error" id="fnameError">*Required: Please enter your first name</div>
+        <br>
+
+        <div class = "join_form_info">
+          <span class="label">Surname</span>
+          <input name="lname" type="text" value="" id="lname" required/>
+        </div>
+        <div class="error" id="lnameError">*Required: Please enter your surname</div>
+        <br>
+
+        <div class = "join_form_info">
+          <span class="label">Phone Number</span>
+          <input name="phone" type="text" value="" id="phone" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"/>
+        </div>
+        <div class="error" id="phoneError">*Required: Please enter a valid phone number (04xx-xxx-xxx)</div>
+        <br>
+
+        <div class = "join_form_info">
+          <span class="label">Email</span>
+          <input name="email" type="text" value="" id="email" required/>
+        </div>
+        <div class="error" id="emailError">*Required: Please enter a valid email</div>
+        <br>
+
+        <div class = "join_form_info">
+          <span for="label">Preferred Contact Method</span>
+          <select class = "contact_dropdown" id = "contacted" name = "contacted" required>
+            <option value = "Email">Email</option>
+            <option value = "Phone_Number">Phone Number</option>
+          </select>
+          <div class="error" id="lnameError">*Required: Please select best contact method</div>
+        </div>
+        <br>
+
+        <div class = "join_form_info">
+          <span class="label">Topic</span>
+          <input class = "contact_topic" name="topic" type="text" value="" id="topic" required/>
+        </div>
+        <div class="error" id="lnameError">*Required: Please enter what your query is about</div>
+        <br>
+
+        <div class = "join_form_info">
+          <span>Write Your Message Here</span>
+          <textarea class = "contact_msg" type = "text" name = "message" id = "contact_msg" required></textarea>
+        </div>
+
+        <div class = "contact_btn">
+          <div class = "inner_join_form"></div>
+          <input type = "submit" value  ="Submit" class = "btn btn-primary">
+        </div>
+      </form>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class = "footer_container">
+        <div class = "footer">
+          <div class = "footer_heading footer_sitemap">
+            <h2>The Sweet Corner</h2>
+            <a href="index.html">Home</a>
+            <a href="cakes.html">Cakes</a>
+            <a href="cupcakes.html">Cupcakes</a>
+            <a href="treats.html">Sweet Treats</a>
+            <a href="gallery_reviews.html">Gallery and Reviews</a>
+            <a href="locations.html">Locations</a>
+            <a href="join_us.html">Join Us</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+          </div>
+          <div class = "footer_heading footer_socials">
+            <h2>Social Media</h2>
+            <ul class = "social_designs">
+              <li class = "facebook"><i class = "fab fa-facebook"></i></li>
+              <li class = "instagram"><i class = "fab fa-instagram"></i></li>
+              <li class = "twitter"><i class = "fab fa-twitter"></i></li>
+              <li class = "tiktok"><i class = "fab fa-tiktok"></i></li>
+            </ul>
+          </div>
+          <div class = "footer_newsletter">
+            <h2>Join us on the <br>sweetest journey ever!<br>Subscribe Now!</h2>
+            <input type = "email" placeholder = "example@email.com" id = "footer_newsletter">
+            <form action = "join_us.html">
+              <input type = "submit" value = "Subscribe" id = "footer_newsletter_button">
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SMOOTH SCROLL JS -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src = "script.js"></script>
+
+  </body>
+
+</html>
